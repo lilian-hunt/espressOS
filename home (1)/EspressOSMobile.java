@@ -3,9 +3,8 @@
  *
  *
  * EspressOSMobile
- * In this assignment you will be creating an EspressOS Mobile Phone as part of a simulation.
+ * This project creates an EspressOS Mobile Phone as part of a simulation.
  * The Mobile phone includes several attributes unique to the phone and has simple functionality.
- * You are to complete 2 classes. EspressOSMobile and EspressOSContact
  *
  * The phone has data
  *  Information about the phone state. 
@@ -33,9 +32,6 @@
  *  the attribute for battery life has valid range [0,100]. 0 is flat, 100 is full.
  *  the attribute for signal strength has a valid range [0, 5]. 0 is no signal, 5 is best signal.
  * 
- * Please implement the methods provided, as some of the marking is
- * making sure that these methods work as specified.
- *
  *
  */
 import java.util.ArrayList;
@@ -43,7 +39,6 @@ import java.util.List;
 public class EspressOSMobile {
 	public static final int MAXIMUM_CONTACTS = 10;
 	
-	/* Use this to store contacts. Do not modify. */
 	protected EspressOSContact[] contacts;
 	protected boolean isOn;
 	protected EspressOSContact ownerContact;
@@ -56,21 +51,6 @@ public class EspressOSMobile {
 	protected Antenna antenna;
 	protected Battery battery;
 
-	/* Every phone manufactured has the following attributes
-	 * 
-	 * the phone is off
-	 * the phone has battery life 25
-	 * the phone is not connected
-	 * the phone has signal strength 0
-	 * Each of the contacts stored in the array contacts has a null value
-	 * 
-	 * the owner first name "EspressOS"
-	 * the owner last name is "Incorporated"
-	 * the owner phone number is "180076237867"
-	 * the owner chat message should have only one message 
-	 *         "Thank you for choosing EspressOS products"
-	 *
-	 */
 	public EspressOSMobile() {
 		/* given */
 		contacts = new EspressOSContact[10];
